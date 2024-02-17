@@ -1,5 +1,5 @@
 # Задание 1
-select c.login, count(o.id) as "ordersCount"
+select c.login, count(1) as "ordersCount"
 from "Couriers" as c
 inner join "Orders" as o on c.id = o."courierId"
 where o."inDelivery" = true
